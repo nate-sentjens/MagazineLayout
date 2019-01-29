@@ -137,6 +137,8 @@ public final class MagazineLayout: UICollectionViewLayout {
           newBackgroundLayoutAttributes[backgroundLocation] = MagazineLayoutCollectionViewLayoutAttributes(
             forSupplementaryViewOfKind: MagazineLayout.SupplementaryViewKind.sectionBackground,
             with: backgroundLocation.indexPath)
+
+          newBackgroundLayoutAttributes[backgroundLocation]?.zIndex = -1
         }
 
         newBackgroundLayoutAttributes[backgroundLocation]?.shouldVerticallySelfSize = false
